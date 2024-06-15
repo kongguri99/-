@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1>Picture Matching Game</h1>
+        </div>
+        <p id="choose-option">Choose Option!</p>
+        <div class="arrow-down" id="arrow-down"></div>
+        <div id="difficulty">
+            <button id="easy-btn" onclick="startGame('easy')">Easy</button>
+            <button id="soso-btn" onclick="startGame('soso')">Soso</button>
+            <button id="hard-btn" onclick="startGame('hard')">Hard</button>
+        </div>
+        <div id="representative-picture-container" style="display: none;">
+            <h2>Find this picture:</h2>
+            <div id="representative-picture" class="picture-card"></div>
+        </div>
+        <div id="game-board-container">
+            <div id="game-board" class="game-board"></div>
+        </div>
+        <audio id="clapSound" src="clap.mp3"></audio>
+        <audio id="wrongSound" src="wrong.mp3"></audio>
+        <div id="result-board" class="result-board"></div>
+    </div>
+    <script src="picture_matching_game.js"></script>
+</body>
+</html>

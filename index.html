@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .title-box {
+            background: linear-gradient(45deg, #fffde7, #fff9c4);
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            animation: blink 1s infinite, scale 2s infinite;
+        }
+        .game-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .game-cell {
+            width: 200px;
+            height: 100px;
+            background: linear-gradient(45deg, #f3e5f5, #e1bee7);
+            border: 2px solid #333;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .game-cell:nth-child(1) {
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+        }
+        .game-cell:nth-child(2) {
+            background: linear-gradient(45deg, #f3e5f5, #e1bee7);
+        }
+        .game-cell:nth-child(3) {
+            background: linear-gradient(45deg, #e8f5e9, #c8e6c9);
+        }
+        .game-cell:nth-child(4) {
+            background: linear-gradient(45deg, #fff3e0, #ffe0b2);
+        }
+        .game-cell:nth-child(5) {
+            background: linear-gradient(45deg, #ffebee, #ffcdd2);
+        }
+        .game-cell:nth-child(6) {
+            background: linear-gradient(45deg, #f3e5f5, #e1bee7);
+        }
+        .game-cell:nth-child(7) {
+            background: linear-gradient(45deg, #e1f5fe, #b3e5fc);
+        }
+        .game-cell:nth-child(8) {
+            background: linear-gradient(45deg, #e0f7fa, #b2ebf2);
+        }
+        .game-cell:hover {
+            background: #ddd;
+        }
+        .game-cell a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @keyframes scale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1>Let's play games !!</h1>
+        </div>
+        <div class="game-grid">
+            <div class="game-cell">
+                <a href="memory_card_matching_game.html">Memory Card Matching Game</a>
+            </div>
+            <div class="game-cell">
+                <a href="picture_matching_game.html">Picture Matching Game</a>
+            </div>
+            <div class="game-cell">
+                <a href="#">Coming Soon</a>
+            </div>
+            <div class="game-cell">
+                <a href="#">Coming Soon</a>
+            </div>
+            <div class="game-cell">
+                <a href="#">Coming Soon</a>
+            </div>
+            <div class="game-cell">
+                <a href="#">Coming Soon</a>
+            </div>
+            <div class="game-cell">
+                <a href="#">Coming Soon</a>
+            </div>
+            <div class="game-cell">
+                <a href="#">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

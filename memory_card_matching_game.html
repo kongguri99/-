@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Matching Game</title>
+    <link rel="stylesheet" href="memory_card_matching_game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1>Memory Card Matching Game</h1>
+        </div>
+        <p id="choose-option">Choose Option!</p>
+        <div class="arrow-down" id="arrow-down"></div>
+        <div id="difficulty">
+            <button id="easy-btn" onclick="startGame('easy')">Easy</button>
+            <button id="soso-btn" onclick="startGame('soso')">Soso</button>
+            <button id="hard-btn" onclick="startGame('hard')">Hard</button>
+        </div>
+        <div id="game-board-container">
+            <div id="game-board" class="game-board"></div>
+        </div>
+        <div id="click-counter">Click: 0 회</div>
+        <audio id="clapSound" src="clap.mp3"></audio>
+    </div>
+    <script src="memory_card_matching_game.js"></script>
+</body>
+</html>
